@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Parliament</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 90%;
+            max-height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            img {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>The Parliament</h1>
+        <p>
+            The Constitution of India, republican in character and federal in structure, embodies the salient features of the parliamentary system. It provides for a Parliament for the Union consisting of the President and the two Houses, namely, the Rajya Sabha (Council of States) and the Lok Sabha (House of the People); a Union Executive, drawn from both the Houses of Parliament and collectively responsible to the Lok Sabha.
+        </p>
+        <p>
+            Ensuring thereby an intimate relationship between the Union Executive and Parliament; a head of the State called the President of India, acting on the aid and advice of the Union Council of Ministers; a number of States with basic provisions, parallel to those for the Union in respect of the Executive and Legislature of each State; Rule of law; independent Judiciary and a permanent Civil Service. The Parliament in India is not a sovereign body, it functions within the bounds of a written Constitution.
+        </p>
+        <p>
+            The authority and jurisdiction of Parliament are limited by the distribution of powers between the Union and the States and by the incorporation of a code of justiciable fundamental rights in the Constitution. There is also provision for judicial review which means that all laws passed by Parliament must be in conformity with the provisions of the Constitution and liable to be tested for constitutionality by an independent Judiciary. All these provisions tend to qualify the nature and extent of the authority and jurisdiction of Parliament.
+        </p>
+        <p>
+            <strong>Interesting Facts about the Indian Parliament:</strong><br>
+            • The biggest law-making assembly of India is Parliament, which constitutes President, Lok Sabha, and Rajya Sabha.<br>
+            • Edwin Lutyens and Herbert Baker are the architects who designed the model of Parliament. The stone laying for the inauguration of constructing parliament was made on 12 February 1921. The construction was completed on January 18, 1927, after 6 years.<br>
+            • The inauguration of the parliament building was made by the then Indian Viceroy, Lord Irwin. The area of the Parliament compound is about 6 Acres. There are 12 doors for entry into the parliament. The central hall is in the middle of Parliament Mandir. It was in the central hall that the transfer of British governance to Indians took place in August 1947.<br>
+            • The area of Lok Sabha Hall in Parliament is 446 square meters. The seats in Lok Sabha are arranged in the manner of a Horse Shed. There are around 550 seats for the members of Lok Sabha. The floor is covered with a green-colored carpet in Lok Sabha. The members of the ruling party are seated on the right side, whereas opposition party members are seated on the left side of Lok Sabha.
+        </p>
+        <img src="parliament.jpg" alt="The Parliament">
+        <div class="buttons">
+            <button class="btn" onclick="closePage()">Close</button>
+            <button class="btn" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function closePage() {
+            alert('Are you sure you want to close this page?');
+            window.close();
+        }
+
+        function nextPage() {
+            if (confirm('Please confirm! Do you want to go to the next page?')) {
+                window.location.href = 'p3.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

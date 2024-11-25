@@ -1,0 +1,133 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget in Parliament</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 90%;
+            max-height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            img {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Budget in Parliament</h1>
+        <p>
+            Ours is a parliamentary system of Government based on the Westminster model. The Constitution has, therefore, vested the power over the purse in the hands of chosen representatives of the people, thus sanctifying the principle ‘no taxation without representation’. Preparation of Budget for the approval of the Legislature is a constitutional obligation of the Government, both at the Centre and the State levels.
+        </p>
+        <p>
+            Legislative prerogative over taxation, legislative control over expenditure, and executive initiative in financial matters are some of the fundamental principles of the system of parliamentary financial control. For example, Article 265 provides that ‘no tax shall be levied or collected except by authority of law’; no expenditure can be incurred except with the authorization of the Legislature (Article 266); and the President shall, in respect of every financial year, cause to be laid before Parliament, Annual Financial Statement (Article 112). These provisions of our Constitution make the Government accountable to Parliament.
+        </p>
+        <p>
+            The ‘Annual Financial Statement’ laid before both the Houses of Parliament constitutes the Budget of the Union Government. This statement takes into account a period of one Financial Year, which commences on 1st April each year. The statement embodies the estimated receipts and expenditure of the Government of India for the Financial Year.
+        </p>
+        <p>
+            Interesting facts about the Union Budget: 
+            <ul>
+                <li>Since 2017, the Budget is presented on February 1 instead of February 28, ensuring that all budget-related processes are completed before April 1, the start of the financial year.</li>
+                <li>In 2016, the Railway Budget was merged with the Union Budget, ending a practice that began in 1924.</li>
+                <li>In 2021, Finance Minister Smt. Nirmala Sitharaman presented the first-ever digital budget using a tablet.</li>
+            </ul>
+        </p>
+        <img src="budget.jpg" alt="Budget in Parliament">
+        <div class="buttons">
+            <button class="btn" onclick="closePage()">Close</button>
+            <button class="btn" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function closePage() {
+            alert('Are you sure you want to close this page?');
+            window.close();
+        }
+
+        function nextPage() {
+            if (confirm('Please confirm! Do you want to go to the next page?')) {
+                window.location.href = 'p1.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Hour in Lok Sabha</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 90%;
+            max-height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            img {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Question Hour in Lok Sabha</h1>
+        <p>
+            Generally, the first hour of a sitting of Lok Sabha i.e. from 11:00 AM to 12:00 PM is devoted to the Questions, and this hour is called the Question Hour. It has a special significance in the proceedings of the Parliament. Asking questions is an inherent and unfettered parliamentary right of members. It is during the Question Hour that the members can ask questions on every aspect of administration and Governmental activity. Government policies in national as well as international spheres come into sharp focus as the members try to elicit pertinent information during the Question Hour.
+        </p>
+        <p>
+            The Government is, as it were, put on its trial during the Question Hour and every Minister whose turn it is to answer questions has to stand up and answer for his or her administration's acts of omission and commission. Through the Question Hour, the Government is able to quickly feel the pulse of the nation and adapt its policies and actions accordingly. It is through questions in the Parliament that the Government remains in touch with the people as members are enabled to ventilate the grievances of the public in matters concerning the administration. 
+        </p>
+        <p>
+            Questions enable Ministries to gauge the popular reaction to their policy and administration. Questions bring to the notice of the Ministers many loopholes which otherwise would have gone unnoticed. Sometimes questions may lead to the appointment of a Commission, a Court of Enquiry, or even Legislation when matters raised by Members are grave enough to agitate the public mind and are of wide public importance.
+        </p>
+        <p>
+            The Question Hour is an interesting part of the Parliamentary proceedings. Although a question mainly seeks information and tries to elicit facts on a particular subject, there are many lively and quicksilver repartees between the Members asking the questions and the Ministers answering them. These repartees are sometimes coupled with flashes of wit and humour. That is why the public galleries and the press galleries are packed to capacity during the Question Hour.
+        </p>
+        <img src="question hr.jpg" alt="Question Hour in Lok Sabha">
+        <div class="buttons">
+            <button class="btn" onclick="closePage()">Close</button>
+            <button class="btn" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function closePage() {
+            alert('Are you sure you want to close this page?');
+            window.close();
+        }
+
+        function nextPage() {
+            if (confirm('Please confirm! Do you want to go to the next page?')) {
+                window.location.href = 'p4.html';
+            }
+        }
+    </script>
+</body>
+
+</html>
